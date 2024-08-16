@@ -1,74 +1,88 @@
 *{
     margin: 0;
     padding: 0;
+ 
 }
 
+
+
 .titulo{
-    text-align: center;  
+    display: flex;
+    justify-content: center;
  }
 
-
+                                            /* primer texto  */
 .PrimerTexto{
     text-align: center;
    }
+
+.ImagenPrimer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
    .ImagenPrimer img{
-       
-       margin: 10px 100px 10px 100px;
+        margin: 10px 100px 10px 100px;
        border-radius: 10px;
+       flex-wrap: wrap;
    }
+
    .PrimerTexto h1{
        font-size: 50px;
-       text-align: center;
    }
-   .SegundoTexto{
+
+                                            /* segundo texto */
+.SegundoTexto{
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    margin: 80px 
 }
 .SegundoTexto h2{
     font-size: 50px;
 }
 
-
+                                            /* tercer texto */
 .TercerTexto{
     display: flex;
-    margin: 100px;
+    justify-content: center;
+   
+     margin: 20px 20px;
+     
 }
 .TercerTexto p{
-    text-align: center;
-    margin: auto;
-    margin: 50px 50px 50px 100px;
+    margin: 25px 25px;
+   text-align: center;
+
 }
-
+                                                /* cuarto texto */
 .CuartoTexto{
-    display: grid;
-    height: 60%;
-    width: auto;
+    display: flex;
+   justify-content: space-evenly;
 
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto;
-    justify-items: center;
-    justify-content: space-around; 
 }
 
 .MedioPago{
-    height: 20%;
-    width: 70%;
-    display: flex;
+   display: flex;
+   flex-wrap: wrap;
+    
 }
 .MedioPago img{
     width:200px ;
     height: 100px;
 }
+.MedioCelular{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
 .MedioCelular img{
     width:200px ;
     height: 100px;
 }
-.MedioCelular{
-    height: 20%;
-    width: 70%; 
-    display: flex;
-}
-/* sucursal */
+
+                                                    /* sucursal */
 .TextoUnoSucursal h1{
     text-align: center;
 }
@@ -102,7 +116,7 @@ padding: 10px 100px 10px 100px;
     height: 150px;
 }
 
-/* servicio */
+                                                        /* servicio */
 
 
   /* texto 1 */
@@ -198,17 +212,33 @@ padding: 10px 100px 10px 100px;
     height: 300px;
 }
 
-/* sesion */
+                                                /*iniciar sesion */
+.cajainiciar{
+    display: flex;
+    justify-content: center;
+}
 .cajasesion{
+    display: grid;
+    width: 30%;
     text-align: center;
-    float: left;
     background-color: #F6E3CA;
-    margin-left: 43%;
     border: #D7C8B6 2px solid;
     border-radius: 5px;
-    border: 2px solid;
-    padding:  30px;
-    
-
 }
-
+.cajasesion a{
+   text-decoration: none;
+   margin: 2%;
+}
+                                            /* registarme */
+.cajaregistro{
+    display: flex;
+    justify-content: center;
+}
+.cuadroregistro{
+    display: grid;
+    width: 30%;
+    text-align: center;
+    background-color: #F6E3CA;
+    border: #D7C8B6 2px solid;
+    border-radius: 5px; 
+}
